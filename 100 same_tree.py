@@ -20,10 +20,11 @@ class Solution:
             return ([node.val] + traversal(node.left) + traversal(node.right)) if node else [None]
 
         p_traversal = traversal(p)
-        q_traversal = traversal(q)s
+        q_traversal = traversal(q)
         if p_traversal == q_traversal:
             return True
         return False
+
 
 p = TreeNode(1, TreeNode(2), None)
 q = TreeNode(1, None, TreeNode(2))
