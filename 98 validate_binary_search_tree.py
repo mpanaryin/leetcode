@@ -32,3 +32,7 @@ class Solution:
                     is_valid_node(node.right, node.val, max_val))
 
         return is_valid_node(root, None, None)
+
+root = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(8, TreeNode(9), TreeNode(7)))
+s = Solution()
+print(s.isValidBST(root))
