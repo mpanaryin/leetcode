@@ -42,7 +42,7 @@ class Solution:
         for i in range(in_column_count):
             dfs(i, 0)
         print('~~~~~')
-        # По вертикали права
+        # По вертикали право
         for i in range(in_column_count):
             dfs(i, in_row_count - 1)
 
