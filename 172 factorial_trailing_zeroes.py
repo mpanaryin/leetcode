@@ -10,8 +10,13 @@ class Solution:
     Note that n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1.
     """
     def trailingZeroes(self, n: int) -> int:
-        @lru_cache
         def factorial(n):
+            """
+            Тут мог бы быть такой код:
+            return 1 if n == 0 else n * factorial(n - 1)
+
+            Но будет ошибка с лимитом рекурсии
+            """
             result = 1
             while n > 0:
                 result *= n
