@@ -30,13 +30,3 @@ nums6 = [344, 3]
 s = Solution()
 result = s.largestNumber(nums5)
 print(result)
-
-1113111_113
-1113111_311
-
-
-311, 3
-
-3113
-
-3311
