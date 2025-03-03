@@ -19,3 +19,4 @@ class Solution:
         self.invertTree(root.right)
         self.invertTree(root.left)
         return root
+
