@@ -54,9 +54,6 @@ class Solution:
 
         # Start backwards from the last element which would be part of new list.
         last = length_ - possible_dups
-        print(last)
-        print(arr[last])
-        print(possible_dups)
         # Copy zero twice, and non zero once.
         for i in range(last, -1, -1):
             if arr[i] == 0:
