@@ -3,6 +3,8 @@ import itertools
 
 class Solution:
     """
+    Grade [Easy]
+
     You are given an array of digits called digits.
     Your task is to determine the number of distinct three-digit even numbers that can be formed using these digits.
 
