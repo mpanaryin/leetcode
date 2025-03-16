@@ -1,5 +1,6 @@
 class Spreadsheet:
     """
+    Grade [Medium]
     A spreadsheet is a grid with 26 columns (labeled from 'A' to 'Z') and a given number of rows.
     Each cell in the spreadsheet can hold an integer value between 0 and 105.
 
