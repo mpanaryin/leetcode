@@ -1,5 +1,7 @@
 class Solution:
     """
+    Grade [Easy]
+
     Given an integer array nums sorted in non-decreasing order,
     return an array of the squares of each number sorted in non-decreasing order.
 
@@ -14,7 +16,8 @@ class Solution:
 
     def sortedSquares(self, nums: list[int]) -> list[int]:
         """
-        2 pointers
+        2 pointers - суть в том, что мы будем добавлять элементы с концов без учёта отрицательное/положительное,
+        а только по значению, таким образом мы выстраиваем естественную сортировку по возрастанию
         Time complexity: O(n)
         Space complexity: O(n)
         """
