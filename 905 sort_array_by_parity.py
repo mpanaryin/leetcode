@@ -14,6 +14,7 @@ class Solution:
     1 <= nums.length <= 5000
     0 <= nums[i] <= 5000
     """
+
     def sortArrayByParity1(self, nums: list[int]) -> list[int]:
         """
         Моё старое решение, судя по срезам через del, будет постоянный пересчёт индексов - плохо по времени
@@ -65,7 +66,8 @@ class Solution:
                 end -= 1
         return nums
 
-nums = [3,1,2,4]
-s = Solution2()
-s.sortArrayByParity(nums)
+
+nums = [3, 1, 2, 4]
+s = Solution()
+s.sortArrayByParity3(nums)
 print(nums)
