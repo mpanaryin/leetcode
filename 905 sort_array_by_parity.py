@@ -2,12 +2,21 @@ from typing import List
 
 
 class Solution:
-    def sortArrayByParity(self, nums: List[int]) -> List[int]:
-        """
-        Given an integer array nums, move all the even integers at the beginning
-        of the array followed by all the odd integers.
+    """
+    Grade [Easy]
 
-        Return any array that satisfies this condition.
+    Given an integer array nums, move all the even integers at the beginning
+    of the array followed by all the odd integers.
+
+    Return any array that satisfies this condition.
+
+    Constraints:
+    1 <= nums.length <= 5000
+    0 <= nums[i] <= 5000
+    """
+    def sortArrayByParity1(self, nums: list[int]) -> list[int]:
+        """
+        Моё старое решение, судя по срезам через del, будет постоянный пересчёт индексов - плохо по времени
         """
         dif_index = 0
         nums_len = len(nums)
@@ -19,20 +28,38 @@ class Solution:
                 dif_index += 1
         return nums
 
-
-class Solution2:
-    def sortArrayByParity(self, nums: List[int]) -> List[int]:
+    def sortArrayByParity2(self, nums: list[int]) -> list[int]:
         """
-        Given an integer array nums, move all the even integers at the beginning
-        of the array followed by all the odd integers.
+        Time Complexity: O(n)
+        Space Complexity: O(1)
 
-        Return any array that satisfies this condition.
+        Моё новое решение, аналогично решению 283 со сдвигом нулей
+        """
+        odd_index = None
+        for i in range(len(nums)):
+            if nums[i] % 2 == 0 and odd_index is not None:
+                nums[i], nums[odd_index] = nums[odd_index], nums[i]
+                while odd_index < i:
+                    odd_index += 1
+                    if nums[odd_index] % 2 != 0:
+                        break
+            elif odd_index is None and nums[i] % 2 != 0:
+                odd_index = i
+
+    def sortArrayByParity3(self, nums: list[int]) -> list[int]:
+        """
+        Time Complexity: O(n)
+        Space Complexity: O(1)
+
+        Решение с сайта, подходит такой обмен только из-за условия, которому не важен порядок элементов
         """
         start = 0
         end = len(nums) - 1
         while start <= end:
+            # Если число чётное, то оставляем его
             if nums[start] % 2 == 0:
                 start += 1
+            # Если число нечетное, то меняем местами с последним элементом
             else:
                 nums[start], nums[end] = nums[end], nums[start]
                 end -= 1
