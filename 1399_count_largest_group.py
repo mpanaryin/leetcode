@@ -4,6 +4,7 @@ from collections import Counter
 class Solution:
     """
     Grade[Easy]
+    Topics[Hash Table, Math]
 
     You are given an integer n.
 

@@ -1,6 +1,7 @@
 class Solution:
     """
-    Grade[easy]
+    Grade[Easy]
+    Topics[Array]
 
     You are given a 0-indexed integer array nums.
 
@@ -22,9 +23,8 @@ class Solution:
         result = 0
         for i in range(len(nums) - 2):
             for j in range(i + 1, len(nums) - 1):
-                result = max((nums[i] - nums[j]) * max(nums[j+1:]), result)
+                result = max((nums[i] - nums[j]) * max(nums[j + 1:]), result)
         return result
-
 
     def maximumTripletValue(self, nums: list[int]) -> int:
         """

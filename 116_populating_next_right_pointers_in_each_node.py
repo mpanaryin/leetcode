@@ -14,6 +14,9 @@ class Node:
 
 class Solution:
     """
+    Grade[Medium]
+    Topics[Linked List, Tree, Depth-First Search, Breadth-First Search, Binary Tree]
+
     You are given a perfect binary tree where all leaves are on the same level, and every parent has two children.
     The binary tree has the following definition:
     struct Node {
@@ -40,6 +43,10 @@ class Solution:
     we can finally return root.
     """
     def connect(self, root: Node):
+        """
+        Time complexity: O(n)
+        Space complexity: O(n)
+        """
         if not root:
             return None
         q = deque([root])  # Состоит из 1 элемента - root

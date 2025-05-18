@@ -9,7 +9,17 @@ class TreeNode:
 
 
 class Solution:
+    """
+    Grade[Easy]
+    Topics[Tree, Depth-First Search, Binary Tree]
+
+    Given a binary tree, determine if it is height-balanced.
+    """
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        """
+        Time complexity: O(n)
+        Space complexity: O(h)
+        """
         def check(root):
             if root is None:
                 return 0

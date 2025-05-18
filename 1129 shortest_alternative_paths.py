@@ -5,7 +5,9 @@ from typing import List
 
 class Solution:
     """
-    №1129
+    Grade[Medium]
+    Topics[Breadth-First Search, Graph]
+
     You are given an integer n, the number of nodes in a directed graph where the nodes are labeled
     from 0 to n - 1.
     Each edge is red or blue in this graph, and there could be self-edges and parallel edges.
@@ -20,6 +22,10 @@ class Solution:
     """
 
     def shortest_alternating_paths(self, N, red_edges, blue_edges) -> List[int]:
+        """
+        Time complexity: O(n + r + b)
+        Space complexity: O(n + r + b)
+        """
         adj_list = defaultdict(list)
         # Создаём словарь, в котором ключом является начальная позиция ребра,
         # а ключом конечная позиция ребра + цвет узла (0 - красный, 1 - синий)

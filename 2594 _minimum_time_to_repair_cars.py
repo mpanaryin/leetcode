@@ -5,7 +5,8 @@ from heapq import heapify, heappop, heappush
 
 class Solution:
     """
-    Grade [Medium]
+    Grade[Easy]
+    Topics[Array, Binary Search]
 
     You are given an integer array ranks representing the ranks of some mechanics.
     ranksi is the rank of the ith mechanic. A mechanic with a rank r can repair n cars in r * n2 minutes.
@@ -21,6 +22,7 @@ class Solution:
     1 <= ranks[i] <= 100
     1 <= cars <= 10^6
     """
+
     def repairCars(self, ranks: list[int], cars: int) -> int:
         """
         Time Complexity: O(n+max_rank log(m*max_rank))

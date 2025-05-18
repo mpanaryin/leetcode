@@ -1,6 +1,7 @@
 class Solution:
     """
-    Grade [Medium]
+    Grade[Medium]
+    Topics[Array, Bit Manipulation, Sliding Window]
 
     You are given an array nums consisting of positive integers.
 

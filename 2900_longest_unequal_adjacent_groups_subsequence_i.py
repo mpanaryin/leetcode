@@ -1,6 +1,7 @@
 class Solution:
     """
     Grade[Easy]
+    Topics[Array, String, Dynamic Programming, Greedy]
 
     You are given a string array words and a binary array groups both of length n,
     where words[i] is associated with groups[i].

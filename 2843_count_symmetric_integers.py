@@ -1,6 +1,7 @@
 class Solution:
     """
     Grade[Easy]
+    Topics[Math, Enumeration]
 
     You are given two positive integers low and high.
 

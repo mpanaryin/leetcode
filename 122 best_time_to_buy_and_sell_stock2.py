@@ -4,6 +4,9 @@ from typing import List
 
 class Solution:
     """
+    Grade[Medium]
+    Topics[Array, Dynamic Programming, Greedy]
+
     You are given an integer array prices where prices[i] is the price of a given stock on the i`th day.
 
     On each day, you may decide to buy and/or sell the stock.
@@ -14,6 +17,10 @@ class Solution:
     """
 
     def maxProfit(self, prices: List[int]) -> int:
+        """
+        Time complexity: O(n)
+        Space complexity: O(1)
+        """
         prices_length = len(prices)
         current_stock = None
         profit = 0

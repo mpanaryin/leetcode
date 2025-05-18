@@ -4,6 +4,7 @@ import itertools
 class Solution:
     """
     Grade[Easy]
+    Topics[Array, Hash Table, Sorting, Enumeration]
 
     You are given an integer array digits, where each element is a digit. The array may contain duplicates.
 
@@ -26,8 +27,12 @@ class Solution:
         Time Complexity: O(?) - Beats 8.83%
         Space Complexity: O(M) - Beats 5.55%
         """
-        permutations = list(set([int(f'{num[0]}{num[1]}{num[2]}') for num in itertools.permutations(digits, 3)
-                                 if num[0] != 0 and num[2] % 2 == 0]))
+        permutations = list(
+            set(
+                [int(f'{num[0]}{num[1]}{num[2]}') for num in itertools.permutations(digits, 3)
+                 if num[0] != 0 and num[2] % 2 == 0]
+            )
+        )
         permutations.sort()
         return permutations
 

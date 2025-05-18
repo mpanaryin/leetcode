@@ -3,7 +3,8 @@ from collections import deque
 
 class Solution:
     """
-    Grade [Medium]
+    Grade[Medium]
+    Topics[Array, Bit Manipulation, Queue, Sliding Window, Prefix Sum]
 
     You are given a binary array nums.
 

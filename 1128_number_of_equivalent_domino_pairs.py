@@ -4,6 +4,7 @@ from collections import Counter
 class Solution:
     """
     Grade[Easy]
+    Topics[Array, Hash Table, Counting]
 
     Given a list of dominoes, dominoes[i] = [a, b] is equivalent to dominoes[j] = [c, d]
     if and only if either (a == c and b == d), or (a == d and b == c) - that is,

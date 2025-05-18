@@ -3,7 +3,8 @@ from collections import Counter
 
 class Solution:
     """
-    Grade [Easy]
+    Grade[Easy]
+    Topics[Array, Hash Table, Bit Manipulation, Counting]
 
     You are given an integer array nums consisting of 2 * n integers.
 

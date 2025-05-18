@@ -1,6 +1,7 @@
 class Solution:
     """
     Grade[Easy]
+    Topics[Array]
 
     Given an integer array nums, return the number of subarrays of length 3 such that the sum of
     the first and third numbers equals exactly half of the second number.
@@ -17,7 +18,7 @@ class Solution:
         """
         counter = 0
         for i in range(len(nums) - 2):
-            if nums[i] + nums[i+2] == nums[i+1] / 2:
+            if nums[i] + nums[i + 2] == nums[i + 1] / 2:
                 counter += 1
         return counter
 

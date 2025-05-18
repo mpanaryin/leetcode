@@ -9,10 +9,17 @@ class TreeNode:
 
 
 class Solution:
+    """
+    Grade[Medium]
+    Topics[Tree, Breadth-First Search, Binary Tree]
+
+    Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values.
+    (i.e., from left to right, level by level from leaf to root).
+    """
     def levelOrderBottom(self, root: Optional[TreeNode]) -> List[List[int]]:
         """
-        Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values.
-        (i.e., from left to right, level by level from leaf to root).
+        Time complexity: O(n)
+        Space complexity: O(n)
         """
         def left_to_right_traversal(node: TreeNode | None, current_level: int):
             if node:

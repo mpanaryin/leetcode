@@ -9,15 +9,23 @@ class TreeNode:
 
 
 class Solution:
+    """
+    Grade[Medium]
+    Topics[Linked List, Stack, Tree, Depth-First Search, Binary Tree]
+
+    Given the root of a binary tree, flatten the tree into a "linked list":
+
+    The "linked list" should use the same TreeNode class where the right child pointer points
+    to the next node in the list and the left child pointer is always null.
+    The "linked list" should be in the same order as a pre-order traversal of the binary tree.
+
+    Do not return anything, modify root in-place instead.
+    """
+
     def flatten(self, root: Optional[TreeNode]) -> None:
         """
-        Given the root of a binary tree, flatten the tree into a "linked list":
-
-        The "linked list" should use the same TreeNode class where the right child pointer points
-        to the next node in the list and the left child pointer is always null.
-        The "linked list" should be in the same order as a pre-order traversal of the binary tree.
-
-        Do not return anything, modify root in-place instead.
+        Time complexity: O(n)
+        Space complexity: O(n)
         """
 
         def preorder_traversal(node: TreeNode | None):
@@ -49,6 +57,10 @@ class Solution2:
         self.prev = None
 
     def flatten(self, root):
+        """
+        Time complexity: O(n)
+        Space complexity: O(h)
+        """
         if not root:
             return None
         self.flatten(root.right)
@@ -70,6 +82,9 @@ class Solution3:
         Суть: переносим правую ноду в последнюю правую левой ноды.
         Затем переносится вся левая нода в право, и идёт смещение на одну позицию под root (current),
         так как прошлая root нас уже не интересует
+
+        Time complexity: O(n)
+        Space complexity: O(1)
         """
         cur = root
         while cur:

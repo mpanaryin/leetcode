@@ -6,7 +6,9 @@ from sortedcontainers import SortedSet
 
 class Solution:
     """
-    Grade [Easy]
+    Grade[Easy]
+    Topics[Array, Sorting]
+
 
     Given an integer array nums, return the third distinct maximum number in this array.
     If the third maximum does not exist, return the maximum number.
@@ -138,4 +140,3 @@ s = Solution()
 result = s.thirdMax(nums)
 print(result)
 print(nums)
-

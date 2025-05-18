@@ -4,6 +4,7 @@ from collections import Counter
 class Solution:
     """
     Grade[Easy]
+    Topics[Array, Hash Table]
 
     You are given an integer array nums and an integer k.
 

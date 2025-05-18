@@ -9,15 +9,22 @@ class TreeNode:
 
 
 class Solution:
+    """
+    Grade[Easy]
+    Topics[Tree, Depth-First Search, Breadth-First Search, Binary Tree]
+
+    Given the root of a binary tree and an integer targetSum,
+    return true if the tree has a root-to-leaf path such that adding up all the values
+    along the path equals targetSum.
+
+    A leaf is a node with no children.
+    """
     result = False
 
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
         """
-        Given the root of a binary tree and an integer targetSum,
-        return true if the tree has a root-to-leaf path such that adding up all the values
-        along the path equals targetSum.
-
-        A leaf is a node with no children.
+        Time complexity: O(n)
+        Space complexity: O(h)
         """
         def path_sum(node: TreeNode, current_sum: int = 0):
             if node and not self.result:

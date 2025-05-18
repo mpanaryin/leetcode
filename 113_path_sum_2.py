@@ -9,15 +9,23 @@ class TreeNode:
 
 
 class Solution:
+    """
+    Grade[Medium]
+    Topics[Backtracking, Tree, Depth-First Search, Binary Tree]
+
+    Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where the sum of
+    the node values in the path equals targetSum. Each path should be returned as a list of the node values,
+    not node references.
+
+    A root-to-leaf path is a path starting from the root and ending at any leaf node.
+    A leaf is a node with no children.
+    """
+
     result = []
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
         """
-        Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where the sum of
-        the node values in the path equals targetSum. Each path should be returned as a list of the node values,
-        not node references.
-
-        A root-to-leaf path is a path starting from the root and ending at any leaf node.
-        A leaf is a node with no children.
+        Time complexity: O(n)
+        Space complexity: O(h)
         """
         def path_sum(node: TreeNode, values: list | None = None):
             if node:

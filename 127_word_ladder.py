@@ -4,6 +4,7 @@ import collections
 class Solution:
     """
     Grade[Hard]
+    Topics[Hash Table, String, Breadth-First Search]
 
     A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence
     of words beginWord -> s1 -> s2 -> ... -> sk such that:
@@ -25,6 +26,10 @@ class Solution:
         All the words in wordList are unique.
     """
     def ladderLength(self, beginWord: str, endWord: str, wordList: list[str]) -> int:
+        """
+        Time complexity: O(N * M^2)
+        Space complexity: O(N * M)
+        """
         wordList = set(wordList)
         queue = collections.deque([[beginWord, 1]])
         while queue:
