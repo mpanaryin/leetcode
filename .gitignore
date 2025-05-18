@@ -7,7 +7,7 @@
 node_modules/
 dist/
 
-practice.py
+python/practice.py
 
 # Compiled Java class files
 *.class
