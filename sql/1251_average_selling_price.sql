@@ -69,3 +69,12 @@
 -- Average selling price for product 1 = ((100 * 5) + (15 * 20)) / 115 = 6.96
 -- Average selling price for product 2 = ((200 * 15) + (30 * 30)) / 230 = 16.96
 
+
+-- CROSS JOIN для декартова произведения всех струдентов и предметов
+-- LEFT/FULL JOIN с экзаменами даст нам набор сданных/не сданных предметов
+SELECT std.student_id, std.student_name, s.subject_name, COUNT(e.subject_name) AS attended_exams
+FROM Students std
+CROSS JOIN Subjects s
+FULL JOIN Examinations e ON e.student_id = std.student_id AND s.subject_name = e.subject_name
+GROUP BY std.student_id, std.student_name, s.subject_name
+ORDER BY std.student_id, s.subject_name
