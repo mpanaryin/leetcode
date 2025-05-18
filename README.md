@@ -22,7 +22,7 @@ In addition, there is a 📁 `code_templates` folder with reusable patterns for 
 - ...and more
 ---
 
-## 📂 Примеры
+## 📂 Examples
 
 | #   | Title                              | Difficulty | File / Folder                             |
 |-----|------------------------------------|------------|-------------------------------------------|
