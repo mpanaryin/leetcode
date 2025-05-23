@@ -34,6 +34,6 @@ In addition, there is a 📁 `code_templates` folder with reusable patterns for 
 
 ## 🔗 My LeetCode Profile
 
-👉 [Go to profile](https://leetcode.com/thebestuzl93/)
+👉 [Go to profile](https://leetcode.com/mpanaryin/)
 
 ---
